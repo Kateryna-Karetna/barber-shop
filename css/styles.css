@@ -1,1 +1,139 @@
-body 
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #eb2d2d;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --primary-font-family: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --background-color: #2f303a;
+  --bgc-secondary-color: #f5f4fa;
+  --primary-item-size: 30px;
+  --secondary-item-size: 94px;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  background-color: rgb(97, 97, 97);
+}
+
+/* Спец. */
+
+[href] {
+  color: currentColor;
+  text-decoration: none;
+}
+
+[href]:hover,
+[href]:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Header */
+
+.header {
+  color: var(--primary-white-color);
+  background-color: var(--primary-black-color);
+}
+
+.header-list {
+}
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--primary-black-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-black-color);
+  background-color: var(--primary-white-color);
+}
+
+/* Наши мастера */
+
+.masters-list {
+  display: flex;
+}
+
+.icons-item {
+  display: flex;
+  justify-content: center;
+}
+
+.icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: tomato;
+  margin-top: 10px;
+}
+
+.icons-link:hover,
+.icons-link:focus {
+  background-color: black;
+}
+
+.icons-link:hover .icons,
+.icons-link:focus .icons {
+  fill: white;
+}
+
+.icons {
+  fill: yellow;
+  background-size: 20px;
+  background-position: center;
+}
+
+.icons:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Footer */
+
+.footer {
+  color: var(--primary-white-color);
+  background-color: var(--primary-black-color);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.address {
+  margin-right: 60px;
+}
