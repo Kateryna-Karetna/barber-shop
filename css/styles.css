@@ -60,6 +60,10 @@ ul {
   padding-bottom: 94px;
 }
 
+img {
+  display: block;
+}
+
 /* Header */
 
 .header {
@@ -133,71 +137,85 @@ ul {
   display: flex;
 }
 
-.sction-img:first-child {
+.section-img:not(:last-child) {
   margin-right: 30px;
 }
 
 .card {
-  margin-left: 100px;
-  color: black;
+  margin-left: 60px;
 }
 
 .card-text,
-.card-title {
-  margin-bottom: 25px;
+.card-title,
+.card-text {
+  margin-bottom: 10px;
+}
+
+.button-secondary {
+  margin-left: 0;
 }
 
 /* Наши мастера */
 
 .masters-title {
   text-align: center;
+  margin-bottom: 10px;
 }
 
-.masters-list {
+.card-item {
   display: flex;
-}
-
-.icons-item {
-  display: flex;
-  justify-content: center;
-}
-
-.icons-link {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.masters-list:not(:last-child) {
+  margin-right: 25px;
+}
+
+.card-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.icon-item {
   width: 44px;
   height: 44px;
+  background-color: #fff;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-link {
+  fill: tomato;
+}
+
+.icon-item:hover,
+.icon-item:focus {
   background-color: tomato;
-  margin-top: 10px;
 }
 
-.icons-link:hover,
-.icons-link:focus {
-  background-color: black;
-}
-
-.icons-link:hover .icons,
-.icons-link:focus .icons {
+.icon-item:hover .icon,
+.icon-item:focus .icon {
   fill: white;
 }
 
-.icons {
-  fill: yellow;
-  background-size: 20px;
-  background-position: center;
-}
-
-.icons:not(:last-child) {
-  margin-right: 10px;
+.icon {
+  display: flex;
 }
 
 /* Footer */
 
 .footer {
-  color: var(--primary-white-color);
-  background-color: var(--primary-black-color);
+  color: white;
+  background-color: var(--title-text-color);
 }
 
 .footer-container {
