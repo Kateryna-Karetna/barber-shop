@@ -67,21 +67,91 @@ ul {
   background-color: var(--primary-black-color);
 }
 
-.header-list {
+.header-container {
+  display: flex;
+}
+
+.tel {
+  margin-left: auto;
 }
 
 .button {
-  color: var(--primary-white-color);
-  background-color: var(--primary-black-color);
-}
-
-.button:hover,
-.button:focus {
+  width: 200px;
+  height: 50px;
+  margin-left: 15px;
+  padding: 10px 32px;
   color: var(--primary-black-color);
   background-color: var(--primary-white-color);
 }
 
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--primary-black-color);
+}
+
+/* Hero */
+
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: url(../images/gallery/photo-two.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.hero-text {
+  text-align: center;
+}
+
+/* Секция о нас */
+
+.section-bgc:nth-child(even) {
+  background-color: violet;
+}
+
+.section-container {
+  display: flex;
+}
+
+.section-list {
+  display: flex;
+}
+
+.sction-img:first-child {
+  margin-right: 30px;
+}
+
+.card {
+  margin-left: 100px;
+  color: black;
+}
+
+.card-text,
+.card-title {
+  margin-bottom: 25px;
+}
+
 /* Наши мастера */
+
+.masters-title {
+  text-align: center;
+}
 
 .masters-list {
   display: flex;
