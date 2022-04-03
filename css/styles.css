@@ -290,20 +290,3 @@ img {
 
 .bth-test {
   transition: color 1000ms 200ms, background-color 1000ms 200ms,
-    transform 500ms ease-in-out 500ms;
-  transform: ;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 150px;
-  height: 200px;
-
-  color: rgb(7, 7, 7);
-  background-color: blueviolet;
-}
-
-.bth-test:hover,
-.bth-test:focus {
-  color: white;
-  background-color: tomato;
-}
