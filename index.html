@@ -40,7 +40,12 @@
           </ul>
         </nav>
         <a href="tel:+380441111111" class="tel">+38 044 111 11 11</a>
-        <button type="button" class="button" cursor="pointer">
+        <button
+          type="button"
+          class="primary-button button"
+          cursor="pointer"
+          data-modal-open
+        >
           онлайн-запись
         </button>
       </div>
@@ -348,5 +353,22 @@
         </div>
       </div>
     </footer>
+
+    <button class="bth-test">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, minus!
+    </button>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-wrapper">
+        <button class="modal-bth" data-modal-close>x</button>
+        <p class="modal-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente qui
+          reprehenderit nisi alias laboriosam pariatur cum similique perferendis
+          ratione officiis? Nostrum sit dolorum maiores harum?
+        </p>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

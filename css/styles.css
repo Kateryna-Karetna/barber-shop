@@ -17,6 +17,7 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.03em;
+
   color: var(--primary-white-color);
   background-color: rgb(97, 97, 97);
 }
@@ -24,6 +25,8 @@ body {
 /* Спец. */
 
 [href] {
+  transition: color 250ms;
+
   color: currentColor;
   text-decoration: none;
 }
@@ -35,6 +38,7 @@ body {
 
 .list {
   list-style: none;
+
   padding-left: 0;
 }
 
@@ -80,10 +84,13 @@ img {
 }
 
 .button {
+  transition: color 250ms, background-color 250ms;
+
   width: 200px;
   height: 50px;
   margin-left: 15px;
   padding: 10px 32px;
+
   color: var(--primary-black-color);
   background-color: var(--primary-white-color);
 }
@@ -92,6 +99,10 @@ img {
 .button:focus {
   color: var(--primary-white-color);
   background-color: var(--primary-black-color);
+}
+
+.primary-button {
+  background-image: url(../images/logo/icons.svg#instagram);
 }
 
 /* Hero */
@@ -116,6 +127,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--primary-white-color);
 }
 
@@ -224,4 +236,74 @@ img {
 
 .address {
   margin-right: 60px;
+}
+
+/* Modal window */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  pointer-events: initial;
+
+  background-color: rgba(0, 0, 0, 0.411);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+
+  color: blueviolet;
+  background-color: #fff;
+}
+
+.modal-bth {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  margin: 5px;
+
+  border: 1px solid tomato;
+  border-radius: 50%;
+
+  color: tomato;
+  background-color: #fff;
+}
+
+.modal-text {
+  padding: 20px;
+}
+
+.bth-test {
+  transition: color 1000ms 200ms, background-color 1000ms 200ms,
+    transform 500ms ease-in-out 500ms;
+  transform: ;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 200px;
+
+  color: rgb(7, 7, 7);
+  background-color: blueviolet;
+}
+
+.bth-test:hover,
+.bth-test:focus {
+  color: white;
+  background-color: tomato;
 }
