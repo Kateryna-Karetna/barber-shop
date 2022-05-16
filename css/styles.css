@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #eb2d2d;
@@ -154,6 +154,7 @@ img {
 }
 
 .card {
+  position: relative;
   margin-left: 60px;
 }
 
@@ -287,6 +288,3 @@ img {
 .modal-text {
   padding: 20px;
 }
-
-.bth-test {
-  transition: color 1000ms 200ms, background-color 1000ms 200ms,
